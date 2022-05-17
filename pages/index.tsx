@@ -32,13 +32,6 @@ const PostPage: NextPage<PostPageProps> = ({ source, frontmatter }) => {
 
   return (
     <Layout title='Demo for Table of Contents'>
-      <header>
-        <nav>
-          <Link href='/'>
-            <a>👈 Go back home</a>
-          </Link>
-        </nav>
-      </header>
       <Header>
         <Title>{frontmatter.title}</Title>
         <Warning>
@@ -60,7 +53,7 @@ const PostPage: NextPage<PostPageProps> = ({ source, frontmatter }) => {
 
 export default PostPage
 
-const Header = styled.div``
+const Header = styled.header``
 
 const Title = styled.h1`
   margin-bottom: 0;
